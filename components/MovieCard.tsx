@@ -25,7 +25,7 @@ export default function MovieCard({ movie, rank }: { movie: Movie; rank: number 
         animation: `fadeSlideUp 0.5s ease ${rank * 0.12}s both`,
       }}
     >
-      {/* Rank number */}
+      {/* numero de rank */}
       <div
         style={{
           position: "absolute",
@@ -56,7 +56,7 @@ export default function MovieCard({ movie, rank }: { movie: Movie; rank: number 
             border: "2px solid #3a2a1a",
           }}
         />
-        {/* Rating badge */}
+        {/* selo avaliativo */}
         <div
           style={{
             position: "absolute",

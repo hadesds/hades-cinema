@@ -15,7 +15,7 @@ export default function FilmStrip({ position = "top" }: { position?: "top" | "bo
         position: "relative",
       }}
     >
-      {/* Sprocket holes left */}
+      {/* Furos da engrenagem à esquerda */}
       <div style={{ display: "flex", gap: "24px", padding: "0 12px", flexShrink: 0 }}>
         {Array.from({ length: 3 }).map((_, i) => (
           <div
@@ -31,7 +31,7 @@ export default function FilmStrip({ position = "top" }: { position?: "top" | "bo
         ))}
       </div>
 
-      {/* Scrolling title tape */}
+      {/* Rolagem de fita de titulo */}
       <div
         style={{
           flex: 1,
@@ -63,7 +63,7 @@ export default function FilmStrip({ position = "top" }: { position?: "top" | "bo
         </div>
       </div>
 
-      {/* Sprocket holes right */}
+      {/* Furos da engrenagem à direita */}
       <div style={{ display: "flex", gap: "24px", padding: "0 12px", flexShrink: 0 }}>
         {Array.from({ length: 3 }).map((_, i) => (
           <div

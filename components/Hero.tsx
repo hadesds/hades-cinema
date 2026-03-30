@@ -14,7 +14,7 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      {/* Large background text */}
+      {/* Texto de fundo grande */}
       <div
         style={{
           position: "absolute",
@@ -34,7 +34,7 @@ export default function Hero() {
         HADES CINE
       </div>
 
-      {/* Center content */}
+      {/* Centraliza o conteudo */}
       <div
         style={{
           position: "relative",
@@ -42,7 +42,7 @@ export default function Hero() {
           maxWidth: "800px",
         }}
       >
-        {/* Studio badge */}
+        {/* distintivo */}
         <div
           style={{
             display: "inline-flex",
@@ -96,7 +96,7 @@ export default function Hero() {
           DESCUBRA SEU PRÓXIMO FILME
         </div>
 
-        {/* Tagline */}
+        {/* tagline */}
         <p
           style={{
             fontFamily: "'Special Elite', cursive",
@@ -112,7 +112,7 @@ export default function Hero() {
           os 5 filmes que vão mudar sua noite!!
         </p>
 
-        {/* CTA arrow */}
+        {/* setinha */}
         <a
           href="#quiz"
           style={{
@@ -149,7 +149,7 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Bottom decorative strip */}
+      {/* fita decorativa de baixo */}
       <div
         style={{
           position: "absolute",

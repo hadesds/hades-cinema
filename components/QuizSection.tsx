@@ -34,7 +34,7 @@ export default function QuizSection() {
         setAnswers(newAnswers);
         setCurrentQ((q) => q + 1);
       } else {
-        // Last question — fetch movies
+        // Ultima pergunta — agora da fetch nos filmes
         setPhase("loading");
         const { genre, yearStart, yearEnd } = buildSearchQuery(newAnswers);
         try {
@@ -73,7 +73,7 @@ export default function QuizSection() {
         position: "relative",
       }}
     >
-      {/* Decorative vignette */}
+      {/* vinheta decorativa */}
       <div
         style={{
           position: "absolute",
@@ -85,7 +85,7 @@ export default function QuizSection() {
       />
 
       <div style={{ position: "relative", width: "100%", maxWidth: "680px" }}>
-        {/* ─── IDLE STATE ─── */}
+        {/* estado ocioso */}
         {phase === "idle" && (
           <div style={{ textAlign: "center", animation: "fadeIn 0.8s ease both" }}>
             <div
@@ -159,15 +159,15 @@ export default function QuizSection() {
               INICIAR PROJEÇÃO
             </button>
 
-            {/* Decorative film frame corners */}
+            {/* cantos decorativos para moldura de filme */}
             <FrameCorners />
           </div>
         )}
 
-        {/* ─── QUIZ STATE ─── */}
+        {/* QUIZ */}
         {phase === "quiz" && question && (
           <div style={{ animation: "fadeIn 0.4s ease both" }}>
-            {/* Progress bar */}
+            {/* barra de progresso */}
             <div
               style={{
                 width: "100%",
@@ -200,7 +200,7 @@ export default function QuizSection() {
               </div>
             </div>
 
-            {/* Question */}
+            {/* pergunta */}
             <div
               style={{
                 fontFamily: "'Courier Prime', monospace",
@@ -225,7 +225,7 @@ export default function QuizSection() {
               {question.text}
             </h3>
 
-            {/* Options */}
+            {/* opções */}
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {question.options.map((opt) => (
                 <button
@@ -288,7 +288,7 @@ export default function QuizSection() {
           </div>
         )}
 
-        {/* ─── LOADING STATE ─── */}
+        {/* estado de carregamento */}
         {phase === "loading" && (
           <div
             style={{
@@ -312,7 +312,7 @@ export default function QuizSection() {
           </div>
         )}
 
-        {/* ─── RESULTS STATE ─── */}
+        {/* estado de resultados */}
         {phase === "results" && (
           <div style={{ animation: "fadeIn 0.6s ease both" }}>
             <div style={{ textAlign: "center", marginBottom: "48px" }}>

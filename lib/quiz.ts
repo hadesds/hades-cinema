@@ -39,7 +39,7 @@ export const questions: Question[] = [
     id: 4,
     text: "Que tipo de protagonista te inspira?",
     options: [
-      { label: "O herói improvávelque muda o mundo", value: "Adventure" },
+      { label: "O herói improvável que muda o mundo", value: "Adventure" },
       { label: "O detetive que nunca desiste", value: "Mystery" },
       { label: "O artista à beira do colapso", value: "Music" },
       { label: "O vilão com razões perturbadoras", value: "Horror" },

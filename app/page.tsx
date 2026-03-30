@@ -5,16 +5,16 @@ import QuizSection from "@/components/QuizSection";
 export default function Home() {
   return (
     <main>
-      {/* Top film strip */}
+      {/* Tira de filme superior */}
       <FilmStrip position="top" />
 
-      {/* Hero landing section */}
+      {/* seção landing */}
       <Hero />
 
-      {/* Divider strip */}
+      {/* tira divisória */}
       <FilmStrip position="bottom" />
 
-      {/* Quiz + Results section */}
+      {/* Quiz + seção de resultados */}
       <QuizSection />
 
       {/* Footer */}

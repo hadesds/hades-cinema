@@ -57,7 +57,7 @@ export async function GET(request: NextRequest) {
     })
   );
 
-  // Sort by IMDB rating descending, take top 5
+  // Ordenar por classificação do IMDB em ordem decrescente, seleciona os 5 melhores
   const sorted = results
     .filter((m) => m.imdbRating && m.imdbRating !== "N/A")
     .sort((a, b) => parseFloat(b.imdbRating) - parseFloat(a.imdbRating))

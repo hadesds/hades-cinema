@@ -14,7 +14,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![OMDb API](https://img.shields.io/badge/OMDb-API-gold?style=flat-square)](https://www.omdbapi.com/)
-[![UNDB](https://img.shields.io/badge/UNDB-Equipe%20Azular-orange?style=flat-square)](https://undb.edu.br/)
+[![UNDB](https://img.shields.io/badge/UNDB-Rafael%20Silva-orange?style=flat-square)](https://undb.edu.br/)
 
 </div>
 

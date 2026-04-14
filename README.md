@@ -26,6 +26,7 @@ O **CINEMA** é uma landing page com visual retrô cinematográfico — inspirad
 
 Desenvolvido como projeto acadêmico por **Rafael Silva** da UNDB.
 
+![CINEMA-PRINT-1](/img/print-cinema.png)
 ---
 
 ## ✦ Demonstração
@@ -40,6 +41,8 @@ Desenvolvido como projeto acadêmico por **Rafael Silva** da UNDB.
 3. Qual universo você prefere habitar? *(subgênero)*
 4. Que tipo de protagonista te inspira? *(subgênero secundário)*
 5. Qual é a duração ideal? *(short / medium / long / any)*
+
+![CINEMA-PRINT-QUIZ](/img/print-filme2.png)
 
 ---
 
@@ -196,7 +199,7 @@ npm start
 
 - Dados de filmes via [OMDb API](https://www.omdbapi.com/) — API não oficial do IMDb
 - Tipografia via [Google Fonts](https://fonts.google.com/)
-- Desenvolvido por **Equipe Azular** — UNDB · 2025
+- Desenvolvido por **Rafael Silva** — UNDB · 2026
 
 ---
 

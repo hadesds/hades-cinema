@@ -7,12 +7,12 @@ import MovieCard from "./MovieCard";
 type Phase = "idle" | "quiz" | "loading" | "results";
 
 export default function QuizSection() {
-  const [phase, setPhase] = useState<Phase>("idle");
-  const [currentQ, setCurrentQ] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, string>>({});
-  const [movies, setMovies] = useState<any[]>([]);
-  const [resultGenre, setResultGenre] = useState("");
-  const [selected, setSelected] = useState<string | null>(null);
+  const [phase, setPhase] = useState<Phase>("idle"); 
+  const [currentQ, setCurrentQ] = useState(0); // índice da pergunta atual (0–4)
+  const [answers, setAnswers] = useState<Record<number, string>>({}); // { 1: "Action", 2: "1980,1999", ... }
+  const [movies, setMovies] = useState<any[]>([]); // filmes retornados pela API
+  const [resultGenre, setResultGenre] = useState(""); 
+  const [selected, setSelected] = useState<string | null>(null); // opção clicada no momento
 
   const question = questions[currentQ];
   const progress = ((currentQ) / questions.length) * 100;
@@ -25,17 +25,17 @@ export default function QuizSection() {
   }
 
   async function handleAnswer(value: string) {
-    setSelected(value);
-    const newAnswers = { ...answers, [question.id]: value };
+    setSelected(value); // 1. marca visualmente a opção
+    const newAnswers = { ...answers, [question.id]: value };  // 2. acumula a resposta
 
     setTimeout(async () => {
       setSelected(null);
       if (currentQ < questions.length - 1) {
         setAnswers(newAnswers);
-        setCurrentQ((q) => q + 1);
+        setCurrentQ((q) => q + 1);   // 3a. avança para próxima pergunta
       } else {
-        // Ultima pergunta — agora da fetch nos filmes
-        setPhase("loading");
+        // 3b. Ultima pergunta — agora da fetch nos filmes
+        setPhase("loading"); 
         const { genre, yearStart, yearEnd } = buildSearchQuery(newAnswers);
         try {
           const res = await fetch(
@@ -47,9 +47,9 @@ export default function QuizSection() {
         } catch (_) {
           setMovies([]);
         }
-        setPhase("results");
+        setPhase("results"); // 4. exibe resultados
       }
-    }, 300);
+    }, 300); //timeout para carregar perfeitamente
   }
 
   function restart() {

@@ -1,6 +1,7 @@
 import FilmStrip from "@/components/FilmStrip";
 import Hero from "@/components/Hero";
 import QuizSection from "@/components/QuizSection";
+import { GerenciadorSection } from "@/components/gerenciador/GerenciadorSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
       {/* Quiz + seção de resultados */}
       <QuizSection />
 
+      <GerenciadorSection />
+      
       {/* Footer */}
       <footer
         style={{
